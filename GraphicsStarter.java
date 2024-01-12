@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import java.awt.Color;
 import javax.swing.JFrame;
 
-public class CSAGraphicsStarter extends Canvas{
+public class GraphicsStarter extends Canvas{
     // variables for the Canvas size
     static int w, h;
 
@@ -15,7 +15,7 @@ public class CSAGraphicsStarter extends Canvas{
         h = 600;
         // standard setup stuff
         JFrame frame = new JFrame("My Drawing");
-        Canvas canvas = new CSAGraphicsStarter(); // this must match the file/class name
+        Canvas canvas = new GraphicsStarter(); // this must match the file/class name
         canvas.setSize(w,h);
         canvas.setBackground(new Color(255,255,255));
         frame.add(canvas);
@@ -26,16 +26,21 @@ public class CSAGraphicsStarter extends Canvas{
 
     // this is where the action happens
     public void paint(Graphics g){
-        // g.drawLine params are x1, y1, x2, y2
-        // g.drawRect params are top left x, y, width, height
-        // g.drawOval params are x, y, horiz_size, vert_size
-        //g.setColor(new Color(255,0,0));
-        //g.setColor(Color.BLACK);
+
+        g.setColor(new Color(255,0,0));
+        //g.drawLine params are x1, y1, x2, y2
+        //g.drawRect params are top left x, y, width, height
+        g.drawLine(100,100,200,300);
+        g.drawRect(300,300, 50, 100);
+
+        g.setColor(Color.BLACK);
+        //g.drawOval params are x, y, horiz_size, vert_size
+        g.drawOval(400, 400, 100, 50);
+        
+        
 
         
     } // close paint
   
     
 } // close class
-CSAGraphicsStarter.java
-Displaying CSAGraphicsStarter.java.
