@@ -17,6 +17,16 @@ public class SierpinskiSTARTER extends Canvas{
         w = 400;
         h = 400;
 
+        // standard setup stuff
+        JFrame frame = new JFrame("My Drawing");
+        Canvas canvas = new SierpinskiSTARTER(); // this must match the file/class name
+        canvas.setSize(w,h);
+        canvas.setBackground(Color.WHITE);
+        frame.add(canvas);
+        frame.pack();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         // the first point
         x = w/2;
         y = h/2;
@@ -29,19 +39,10 @@ public class SierpinskiSTARTER extends Canvas{
         x3 = 10;
         y3 = 390;
 
-        // the random vertex
+        // the random vertex (randomized later)
         xR = 0;
         yR = 0;
-
-        // standard setup stuff
-        JFrame frame = new JFrame("My Drawing");
-        Canvas canvas = new SierpinskiSTARTER(); // this must match the file/class name
-        canvas.setSize(w,h);
-        canvas.setBackground(Color.WHITE);
-        frame.add(canvas);
-        frame.pack();
-        frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
     } // close main
 
     // this is where the action happens
@@ -52,7 +53,7 @@ public class SierpinskiSTARTER extends Canvas{
 
         // in a loop
         // choose a random vertex
-        // draw the point
+        // draw the point, delay for fun
 
 
     } // close paint
