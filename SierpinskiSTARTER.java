@@ -32,12 +32,12 @@ public class SierpinskiSTARTER extends Canvas{
         y = h/2;
 
         // the original triangle
-        x1 = 200;
-        y1 = 10;
-        x2 = 390;
-        y2 = 390;
-        x3 = 10;
-        y3 = 390;
+        x1 = 0;
+        y1 = 0;
+        x2 = 0;
+        y2 = 0;
+        x3 = 0;
+        y3 = 0;
 
         // the random vertex (randomized later)
         xR = 0;
