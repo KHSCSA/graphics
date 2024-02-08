@@ -37,7 +37,7 @@ public class SierpinskiSTARTER extends Canvas{
         JFrame frame = new JFrame("My Drawing");
         Canvas canvas = new SierpinskiSTARTER(); // this must match the file/class name
         canvas.setSize(w,h);
-        canvas.setBackground(new Color(255,255,255));
+        canvas.setBackground(Color.WHITE);
         frame.add(canvas);
         frame.pack();
         frame.setVisible(true);
