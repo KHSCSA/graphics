@@ -29,8 +29,10 @@ public class GraphicsStarter extends Canvas{
 
         g.setColor(new Color(255,0,0));
         //g.drawLine params are x1, y1, x2, y2
-        //g.drawRect params are top left x, y, width, height
         g.drawLine(100,100,200,300);
+
+        g.setColor(new Color(0,255,0));
+        //g.drawRect params are top left x, y, width, height
         g.drawRect(300,300, 50, 100);
 
         g.setColor(Color.BLACK);
@@ -38,7 +40,6 @@ public class GraphicsStarter extends Canvas{
         g.drawOval(400, 400, 100, 50);
         
         
-
         
     } // close paint
   
